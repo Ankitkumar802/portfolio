@@ -1,0 +1,179 @@
+/* Ensure that the body and html take up the full height of the viewport */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Flex container for the main content to grow and push the footer to the bottom */
+#main-content {
+    flex: 1;
+}
+
+/* General Body Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Navbar Styles */
+nav img {
+    height: 50px;
+    width: 50px;
+}
+
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar-nav {
+    margin: 0 auto;
+}
+
+/* Hero Section Styles */
+.hero-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s;
+}
+
+.heroimg {
+    height: 150px;
+    width: 120px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    animation: fadeInUp 1s;
+}
+
+/* Projects Section Styles */
+.projects-section {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.projects-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    animation: fadeIn 1s;
+}
+
+.project-thumbnail {
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-thumbnail img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.project-thumbnail p {
+    margin-top: 15px;
+}
+
+.project-thumbnail:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Styles */
+.footer {
+    padding: 20px 0;
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #ffffff;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #a777e3;
+}
+
+/* Back to Top Button Styles */
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #343a40;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#backToTopBtn:hover {
+    background-color: #555;
+}
+
+/* Keyframes for Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,85 @@
+/* Custom styles for the projects page */
+
+body {
+    padding-top: 70px; /* Adjust padding for fixed navbar */
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    background: linear-gradient(90deg, rgba(0,0,0,0.8), rgba(0,0,0,0.5));
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #f8f9fa;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23ffffff' stroke-width='2' d='M5 7h20M5 15h20M5 23h20'/%3E%3C/svg%3E");
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 5px solid #007bff;
+}
+
+.card-body {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #666;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+footer a {
+    color: #007bff;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
